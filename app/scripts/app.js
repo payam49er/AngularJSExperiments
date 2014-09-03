@@ -27,11 +27,6 @@ angular.module('formulaOneApp', [
         templateUrl: 'views/about.html',
         controller: 'about'
       })
-     .when('/contact',{
-            templateUrl:'views/contact.html',
-            controller:'ContactCtrl'
-     })
-
       .otherwise({
         redirectTo: '/'
       });
