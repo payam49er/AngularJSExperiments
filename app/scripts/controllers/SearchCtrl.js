@@ -22,7 +22,6 @@ angular.module('formulaOneApp').controller('SearchCtrl',function($scope, SearchS
             $scope.driversList = data.MRData.StandingsTable.StandingsLists[0].DriverStandings;
         }catch(err){
              statusResult = 'error';
-             console.log(err);
         }
      });
 

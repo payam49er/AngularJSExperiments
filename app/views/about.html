@@ -1,4 +1,20 @@
-<div class="jumbotron">
-    <h1>Just an experiment with AngularJS <br> no big deal!</h1>
+<div ng-controller="about" ng-init="init()">
+    <div class="jumbotron">
+        <h4>I live in Cambridge, MA. Search around my neighborhood</h4>
+        <form>
+            <iframe
+                    width= 100%
+                    height= "400"
+                    zoom = 10
+                    frameborder="0" style="border:0"
+                    ng-src="{{mapUrl}}">
+            </iframe>
 
+            <div class="form-group-lg">
+
+                <input ng-model="searchterm" style="width: 300px;margin-top: 20px" type="text" autofocus class="input-lg" placeholder="Search my neighborhood"/>
+                <button class="btn btn-primary btn-lg" ng-click="search(searchterm)">Search</button>
+            </div>
+        </form>
+    </div>
 </div>

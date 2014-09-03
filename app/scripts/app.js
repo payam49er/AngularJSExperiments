@@ -21,16 +21,16 @@ angular.module('formulaOneApp', [
     $routeProvider
       .when('/', {
         templateUrl: 'views/formulaOne.html',
-        controller: 'MainCtrl'
+        controller: 'SearchCtrl'
       })
-      .when('/about', {
+      .when('/search', {
         templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+        controller: 'about'
       })
-      .when('/search',{
-            templateUrl:'views/formulaOne.html',
-            controller:'SearchCtrl'
-      })
+     .when('/contact',{
+            templateUrl:'views/contact.html',
+            controller:'ContactCtrl'
+     })
 
       .otherwise({
         redirectTo: '/'
